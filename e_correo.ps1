@@ -1,5 +1,5 @@
 # Function to load .env file variables
-function Load-DotEnv {
+function Import-DotEnv {
     param (
         [string]$Path = ".env"
     )
@@ -27,7 +27,7 @@ function Load-DotEnv {
 }
 
 # Load variables from .env
-Load-DotEnv -Path "D:\CorreosPowershell\.env"
+Import-DotEnv -Path "D:\CorreosPowershell\.env"
 
 # --- Configuración de las credenciales del servidor Exchange ---
 # Las variables se cargan desde el .env y se acceden directamente por su nombre
